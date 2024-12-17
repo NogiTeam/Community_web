@@ -25,8 +25,7 @@ export default {
             primary: "var(--primary)",
          },
          fontFamily: {
-            rubik: ["var(--font-rubik)"],
-            doHyeon: ["var(--font-dohyeon)"],
+            poppins: ["Poppins", "sans-serif"],
          },
          animation: {
             spotlight: "spotlight 2s ease .75s 1 forwards",

@@ -2,53 +2,30 @@
 import React from "react";
 import { MagicCard } from "../ui/MagicCard";
 import { Mobile, Monitor, PenTool2 } from "iconsax-react";
+import BlurIn from "../ui/BlurIn";
+import { ROLE } from "../../../../utils/data";
 
 export default function Role() {
    return (
       <div className="relative">
          {/* START:Content */}
          <div className="container py-20">
-            <h2></h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-               <MagicCard className="px-6 py-8">
-                  <div className="p-3 bg-gradient-to-b from-primary to-indigo-600 inline-flex rounded-xl">
-                     <Monitor size="32" color="#fff" variant="Bold" />
-                  </div>
-                  <h3 className="text-2xl md:text-3xl font-doHyeon tracking-wide mt-6">
-                     Web Developer
-                  </h3>
-                  <p className="desc mt-2">
-                     di grup komunitas ini kamu ga usah ragu, karena banyak
-                     sepuh yg bisa bantu bantuin masalah lu, kecuali masalah
-                     cinta.
-                  </p>
-               </MagicCard>
-               <MagicCard className="px-6 py-8">
-                  <div className="p-3 bg-gradient-to-b from-primary to-indigo-600 inline-flex rounded-xl">
-                     <PenTool2 size="32" color="#fff" variant="Bold" />
-                  </div>
-                  <h3 className="text-2xl md:text-3xl font-doHyeon tracking-wide mt-6">
-                     UI/UX Designer
-                  </h3>
-                  <p className="desc mt-2">
-                     di grup komunitas ini kamu ga usah ragu, karena banyak
-                     sepuh yg bisa bantu bantuin masalah lu, kecuali masalah
-                     cinta.
-                  </p>
-               </MagicCard>
-               <MagicCard className="px-6 py-8">
-                  <div className="p-3 bg-gradient-to-b from-primary to-indigo-600 inline-flex rounded-xl">
-                     <Mobile size="32" color="#fff" variant="Bold" />
-                  </div>
-                  <h3 className="text-2xl md:text-3xl font-doHyeon tracking-wide mt-6">
-                     Mobile Developer
-                  </h3>
-                  <p className="desc mt-2">
-                     di grup komunitas ini kamu ga usah ragu, karena banyak
-                     sepuh yg bisa bantu bantuin masalah lu, kecuali masalah
-                     cinta.
-                  </p>
-               </MagicCard>
+            <BlurIn word="Choose your role" />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+               {ROLE.map((item) => (
+                  <MagicCard key={item.title} className="px-6 py-8">
+                     <div className="p-3 bg-gradient-to-b from-primary to-indigo-600 inline-flex rounded-xl">
+                        <Monitor size="32" color="#fff" variant="Bold" />
+                     </div>
+                     <h3 className="text-xl md:text-2xl  tracking-wide mt-6 font-medium">
+                        {item.title}
+                     </h3>
+                     {/* <p className="desc mt-4">
+                        Banyak member yang berpengalaman dibidang, jadi jangan
+                        sungkan yaa
+                     </p> */}
+                  </MagicCard>
+               ))}
             </div>
          </div>
          {/* END:Content */}
