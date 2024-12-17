@@ -35,4 +35,7 @@ body {
    .border-top {
       @apply bg-white/20  h-[1px] absolute top-0 lg:right-8 lg:left-8 xl:left-10 xl:right-10 hidden md:block;
    }
+   .border-bottom {
+      @apply bg-white/20  h-[1px] absolute bottom-0 lg:right-8 lg:left-8 xl:left-10 xl:right-10 hidden md:block;
+   }
 }
