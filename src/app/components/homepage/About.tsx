@@ -1,6 +1,7 @@
 import React from "react";
 import { SectionHeading } from "../ui/Typography";
-import { SlideIn } from "../ui/Transition";
+import { SlideIn, Transition } from "../ui/Transition";
+import Button from "../Button";
 
 export default function About() {
    return (
@@ -15,26 +16,47 @@ export default function About() {
             </SectionHeading>
             {/* End: Section Title */}
 
-            <p className=" text-base md:text-xl font-medium text-white/60 leading-relaxed tracking-wide">
-               NightCoderID dibuat pada 21 September 2022 oleh Imam Wahyudi.
-            </p>
-            <p className=" text-base md:text-xl font-medium text-white/60 leading-relaxed tracking-wide mt-6">
-               Night CoderID didirikan dengan tujuan untuk menciptakan ruang
-               interaktif bagi para coder di semua tingkatan pengalaman, di mana
-               mereka dapat bertemu, berbagi, dan belajar bersama-sama. Kami
-               menyambut semua orang dari berbagai latar belakang, baik pemula
-               yang ingin memulai perjalanan coding mereka maupun profesional
-               yang ingin terus meningkatkan skillnya.
-            </p>
-            <p className=" text-base md:text-xl font-medium text-white/60 leading-relaxed tracking-wide mt-6">
-               Melalui acara webinar atau workshop secara online, kami
-               menyediakan platform untuk berbagi pengetahuan, menginspirasi,
-               dan membangun jaringan di antara komunitas kami. Komitmen kami
-               adalah memberikan pengalaman yang menyenangkan, edukatif, dan
-               saling mendukung di dunia coding.
-            </p>
+            <div>
+               <p className=" text-base md:text-xl font-medium text-white/60 leading-relaxed tracking-wide">
+                  NightCoderID dibuat pada 21 September 2022 oleh Imam Wahyudi.
+               </p>
+               <p className=" text-base md:text-xl font-medium text-white/60 leading-relaxed tracking-wide mt-6">
+                  Night CoderID didirikan dengan tujuan untuk menciptakan ruang
+                  interaktif bagi para coder di semua tingkatan pengalaman, di
+                  mana mereka dapat bertemu, berbagi, dan belajar bersama-sama.
+                  Kami menyambut semua orang dari berbagai latar belakang, baik
+                  pemula yang ingin memulai perjalanan coding mereka maupun
+                  profesional yang ingin terus meningkatkan skillnya.
+               </p>
+               <p className=" text-base md:text-xl font-medium text-white/60 leading-relaxed tracking-wide mt-6">
+                  Melalui acara webinar atau workshop secara online, kami
+                  menyediakan platform untuk berbagi pengetahuan, menginspirasi,
+                  dan membangun jaringan di antara komunitas kami. Komitmen kami
+                  adalah memberikan pengalaman yang menyenangkan, edukatif, dan
+                  saling mendukung di dunia coding.
+               </p>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-5 mt-20">
+               <div></div>
+               <div>
+                  <SectionHeading className="text-start">
+                     <SlideIn className="text-white/40">
+                        Ayo gabung bersama
+                     </SlideIn>
+                     <br />
+                     <SlideIn>kami di !NightCoder ?</SlideIn>
+                  </SectionHeading>
+                  <p className="desc mb-8">
+                     Rasakan pengalaman coding yang menyenangkan seru setiap
+                     hari dan menambah wawasan seputar dunia teknologi!
+                  </p>
+                  <Button href="#" label="JOIN NOW" />
+               </div>
+            </div>
          </div>
          {/* END:Content */}
+
          <span className="blob absolute top-[20%] right-0 w-1/4 h-4/6 blur-[100px] rotate-180 -z-10" />
          <Icon className="absolute h-6 w-6 -top-3 hidden lg:block lg:left-5 xl:left-7 text-white" />
          <Icon className="absolute h-6 w-6 -top-3 hidden lg:block lg:right-5 xl:right-7 text-white" />

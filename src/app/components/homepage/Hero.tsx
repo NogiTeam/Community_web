@@ -2,14 +2,14 @@ import React from "react";
 import { Spotlight } from "../ui/Spotlight";
 import { GradualSpacing } from "../ui/GradualSpacing";
 import Button from "../Button";
-import DotBackground from "../ui/Dotbackground";
+import DotPattern from "../ui/DotPattern";
 
 export default function Hero() {
    return (
       <div className="relative">
          {/* START:Content */}
          <div className="min-h-screen w-full rounded-md flex md:items-center md:justify-center relative overflow-hidden">
-            <DotBackground className="opacity-20" />
+            <DotPattern className="opacity-20" />
             <div className=" absolute pointer-events-none inset-0 flex items-center justify-center bg-[#080808] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
             <div>
                <Spotlight
