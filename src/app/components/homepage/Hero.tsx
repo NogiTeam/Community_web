@@ -14,12 +14,16 @@ export default function Hero() {
             <div>
                <Spotlight
                   className="-top-40 left-0 md:left-60 md:-top-20"
-                  fill="white"
+                  fill="blue"
+               />
+               <Spotlight
+                  className="-top-40 left-10 md:left-60 md:-top-20 h-2/3"
+                  fill="purple"
                />
 
                <Spotlight
                   className="h-[80vh] w-[50vw] top-10 left-full"
-                  fill="white"
+                  fill="blue"
                />
             </div>
 

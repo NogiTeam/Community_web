@@ -18,8 +18,12 @@ body {
    }
 }
 @layer components {
-   .burger {
-      @apply w-full;
+   .blob {
+      background: conic-gradient(
+         from 2.35rad,
+         rgba(150, 19, 196, 0.5),
+         rgba(7, 29, 228, 0.5)
+      );
    }
 }
 @layer utilities {

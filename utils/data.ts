@@ -1,14 +1,14 @@
-export const ROLE = [
+export const BENEFITS = [
    {
-      title: "Web Developer",
+      title: "Relasi",
+      desc: "Tujuan komunitas adalah untuk membangun relasi.",
    },
    {
-      title: "UI/UX Designer",
+      title: "Ilmu Teknologi",
+      desc: "Kamu akan mendapatkan ilmu pengetahuan teknologi.",
    },
    {
-      title: "App Developer",
-   },
-   {
-      title: "Engineering",
+      title: "Pengetahuan Lainnya",
+      desc: "Tidak hanya ilmu teknologi, ilmu pengetahuan juga penting yaa",
    },
 ];
