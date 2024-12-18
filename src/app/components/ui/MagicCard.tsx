@@ -4,6 +4,7 @@ import React, { useCallback, useEffect, useRef } from "react";
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 
 import { cn } from "@/lib/utils";
+import { GridPattern } from "./GridPattern";
 
 export interface MagicCardProps extends React.HTMLAttributes<HTMLDivElement> {
    gradientSize?: number;
@@ -78,6 +79,16 @@ export function MagicCard({
          )}
       >
          <div className="relative z-10">{children}</div>
+         <GridPattern
+            numSquares={30}
+            maxOpacity={0.1}
+            duration={3}
+            repeatDelay={1}
+            className={cn(
+               "[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]",
+               "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12"
+            )}
+         />
          <motion.div
             className="pointer-events-none absolute -inset-px rounded-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100"
             style={{

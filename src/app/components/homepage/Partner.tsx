@@ -15,10 +15,10 @@ export default function Partner() {
             </SectionHeading>
             {/* End: Section Title */}
 
-            <p className=" text-base md:text-xl font-medium text-white/60 leading-relaxed tracking-wide">
+            <p className=" text-base md:text-xl font-medium text-white/40 leading-relaxed tracking-wide">
                NightCoderID dibuat pada 21 September 2022 oleh Imam Wahyudi.
             </p>
-            <p className=" text-base md:text-xl font-medium text-white/60 leading-relaxed tracking-wide mt-6">
+            <p className=" text-base md:text-xl font-medium text-white/40 leading-relaxed tracking-wide mt-6">
                Night CoderID didirikan dengan tujuan untuk menciptakan ruang
                interaktif bagi para coder di semua tingkatan pengalaman, di mana
                mereka dapat bertemu, berbagi, dan belajar bersama-sama. Kami
@@ -26,7 +26,7 @@ export default function Partner() {
                yang ingin memulai perjalanan coding mereka maupun profesional
                yang ingin terus meningkatkan skillnya.
             </p>
-            <p className=" text-base md:text-xl font-medium text-white/60 leading-relaxed tracking-wide mt-6">
+            <p className=" text-base md:text-xl font-medium text-white/40 leading-relaxed tracking-wide mt-6">
                Melalui acara webinar atau workshop secara online, kami
                menyediakan platform untuk berbagi pengetahuan, menginspirasi,
                dan membangun jaringan di antara komunitas kami. Komitmen kami

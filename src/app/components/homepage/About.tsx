@@ -16,11 +16,11 @@ export default function About() {
             </SectionHeading>
             {/* End: Section Title */}
 
-            <div>
-               <p className=" text-base md:text-xl font-medium text-white/60 leading-relaxed tracking-wide">
+            <Transition>
+               <p className=" text-base md:text-xl font-medium text-white/40 leading-relaxed tracking-wide">
                   NightCoderID dibuat pada 21 September 2022 oleh Imam Wahyudi.
                </p>
-               <p className=" text-base md:text-xl font-medium text-white/60 leading-relaxed tracking-wide mt-6">
+               <p className=" text-base md:text-xl font-medium text-white/40 leading-relaxed tracking-wide mt-6">
                   Night CoderID didirikan dengan tujuan untuk menciptakan ruang
                   interaktif bagi para coder di semua tingkatan pengalaman, di
                   mana mereka dapat bertemu, berbagi, dan belajar bersama-sama.
@@ -28,18 +28,24 @@ export default function About() {
                   pemula yang ingin memulai perjalanan coding mereka maupun
                   profesional yang ingin terus meningkatkan skillnya.
                </p>
-               <p className=" text-base md:text-xl font-medium text-white/60 leading-relaxed tracking-wide mt-6">
+               <p className=" text-base md:text-xl font-medium text-white/40 leading-relaxed tracking-wide mt-6">
                   Melalui acara webinar atau workshop secara online, kami
                   menyediakan platform untuk berbagi pengetahuan, menginspirasi,
                   dan membangun jaringan di antara komunitas kami. Komitmen kami
                   adalah memberikan pengalaman yang menyenangkan, edukatif, dan
                   saling mendukung di dunia coding.
                </p>
-            </div>
+            </Transition>
 
             <div className="grid lg:grid-cols-2 gap-5 mt-20">
-               <div></div>
-               <div>
+               <Transition>
+                  <img
+                     className="rounded-2xl"
+                     src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                     alt="NightCoder Community"
+                  />
+               </Transition>
+               <Transition>
                   <SectionHeading className="text-start">
                      <SlideIn className="text-white/40">
                         Ayo gabung bersama
@@ -52,7 +58,7 @@ export default function About() {
                      hari dan menambah wawasan seputar dunia teknologi!
                   </p>
                   <Button href="#" label="JOIN NOW" />
-               </div>
+               </Transition>
             </div>
          </div>
          {/* END:Content */}
