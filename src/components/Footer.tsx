@@ -1,11 +1,11 @@
 export default function Footer() {
-   const year = new Date().getFullYear;
+   const year = new Date().getFullYear();
    return (
       <footer className="relative">
          {/* START:Content */}
          <div className="container py-8 ">
-            <p className="text-sm text-white/20">
-               &copy; {Number(year)}. All right reserved
+            <p className="text-[12px] text-white/20">
+               &copy; 2022 - {Number(year)}. All right reserved
             </p>
          </div>
          {/* END:Content */}

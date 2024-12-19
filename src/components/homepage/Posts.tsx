@@ -2,25 +2,45 @@
 import React from "react";
 import { MagicCard } from "../ui/MagicCard";
 import { Monitor } from "iconsax-react";
-import { BENEFITS } from "../../../../utils/data";
 import { SectionHeading } from "../ui/Typography";
 import { SlideIn, Transition } from "../ui/Transition";
+import { Post } from "@/interfaces/post";
+import CardPost from "../CardPost";
 
-export default function Benefits() {
+export default function Posts({ posts }: { posts: Post[] }) {
    return (
       <div className="relative">
          {/* START:Content */}
          <div className="container py-20">
             {/* Section Title */}
             <SectionHeading className="md:pl-16 overflow-hidden">
-               <SlideIn className="text-white/40">Manfaat gabung</SlideIn>
+               <SlideIn className="text-white/40">Berita, wawasan, </SlideIn>
                <br />
-               <SlideIn>!NightCoder</SlideIn>
+               <SlideIn>dan lainnya</SlideIn>
             </SectionHeading>
             {/* End: Section Title */}
             <Transition>
-               <div className="grid grid-cols-1 md:grid-cols-3  gap-6 ">
-                  {BENEFITS.map((item) => (
+               <div className="grid grid-cols-1 md:grid-cols-3  gap-6">
+                  {posts.map((post: Post) => (
+                     <CardPost
+                        key={post.title}
+                        slug={post.slug}
+                        title={post.title}
+                        date={post.date}
+                        coverImage={post.coverImage}
+                        author={post.author}
+                     />
+                  ))}
+                  {/* <MagicCard className="px-6 py-8">
+                     <div className="p-3 bg-gradient-to-b from-primary to-indigo-600 inline-flex rounded-xl">
+                        <Monitor size="32" color="#fff" variant="Bold" />
+                     </div>
+                     <h3 className="text-xl md:text-2xl  tracking-wide mt-6 font-semibold">
+                        {posts.title}
+                     </h3>
+                     <p className="desc mt-4">{posts.author}</p>
+                  </MagicCard> */}
+                  {/* {BENEFITS.map((item) => (
                      <MagicCard key={item.title} className="px-6 py-8">
                         <div className="p-3 bg-gradient-to-b from-primary to-indigo-600 inline-flex rounded-xl">
                            <Monitor size="32" color="#fff" variant="Bold" />
@@ -30,7 +50,7 @@ export default function Benefits() {
                         </h3>
                         <p className="desc mt-4">{item.desc}</p>
                      </MagicCard>
-                  ))}
+                  ))} */}
                </div>
             </Transition>
          </div>
