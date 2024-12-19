@@ -37,7 +37,7 @@ export default function About() {
                </p>
             </Transition>
 
-            <div className="grid lg:grid-cols-2 gap-5 mt-20">
+            <div className="grid lg:grid-cols-2 gap-10 mt-20 items-center">
                <Transition>
                   <img
                      className="rounded-2xl"
