@@ -1,4 +1,3 @@
-import React from "react";
 import { SectionHeading } from "../ui/Typography";
 import { SlideIn, Transition } from "../ui/Transition";
 import Button from "../Button";

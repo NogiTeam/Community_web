@@ -1,4 +1,3 @@
-import React from "react";
 import { Spotlight } from "../ui/Spotlight";
 import { GradualSpacing } from "../ui/GradualSpacing";
 import Button from "../Button";

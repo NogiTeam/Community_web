@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+
 import { MagicCard } from "../ui/MagicCard";
 import { Monitor } from "iconsax-react";
 import { SectionHeading } from "../ui/Typography";

@@ -1,6 +1,5 @@
-import DateFormatter from "@/app/_components/date-formatter";
 import Image from "next/image";
-import React from "react";
+import DateFormatter from "../ui/DateFormatter";
 
 interface Props {
    title: string;
@@ -44,7 +43,7 @@ function PostHeader({
          <h1 className="text-3xl md:text-4xl font-medium md:leading-normal tracking-wide mt-4">
             {title}
          </h1>
-         <p className="desc mt-6">{description}</p>
+         <p className="desc mt-4">{description}</p>
          {/* END: Title and Desc Post */}
 
          {/* START: Cover Image */}
