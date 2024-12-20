@@ -12,7 +12,7 @@ export default function Benefits() {
          {/* START:Content */}
          <div className="container py-20">
             {/* Section Title */}
-            <SectionHeading className="md:pl-16 overflow-hidden">
+            <SectionHeading>
                <SlideIn className="text-white/40">Manfaat gabung</SlideIn>
                <br />
                <SlideIn>!NightCoder</SlideIn>

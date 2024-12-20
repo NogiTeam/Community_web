@@ -1,14 +1,14 @@
 export const BENEFITS = [
    {
-      title: "Relasi",
-      desc: "Tujuan komunitas adalah untuk membangun relasi.",
+      title: "Perluas Koneksi",
+      desc: "Komunitas dapat memperluas koneksi sosial dan profesional.",
    },
    {
-      title: "Ilmu Teknologi",
-      desc: "Kamu akan mendapatkan ilmu pengetahuan teknologi.",
+      title: "Ilmu & pengalaman",
+      desc: "Tempat untuk berbagi ilmu dan pengalaman.",
    },
    {
-      title: "Pengetahuan Lainnya",
-      desc: "Tidak hanya ilmu teknologi, ilmu pengetahuan juga penting yaa",
+      title: "Peluang Baru",
+      desc: "Menjadi tempat untuk mendapatkan peluang baru.",
    },
 ];

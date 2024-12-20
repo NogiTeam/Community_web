@@ -13,8 +13,8 @@ export default function Posts({ posts }: { posts: Post[] }) {
          {/* START:Content */}
          <div className="container py-20">
             {/* Section Title */}
-            <SectionHeading className="md:pl-16 overflow-hidden">
-               <SlideIn className="text-white/40">Berita, wawasan, </SlideIn>
+            <SectionHeading>
+               <SlideIn className="text-white/40">Berita, wawasan,</SlideIn>
                <br />
                <SlideIn>dan lainnya</SlideIn>
             </SectionHeading>

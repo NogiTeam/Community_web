@@ -57,7 +57,7 @@ export default function About() {
                      Rasakan pengalaman coding yang menyenangkan seru setiap
                      hari dan menambah wawasan seputar dunia teknologi!
                   </p>
-                  <Button href="#" label="JOIN NOW" />
+                  <Button target="_blank" href="#" label="JOIN NOW" />
                </Transition>
             </div>
          </div>

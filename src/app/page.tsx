@@ -8,12 +8,12 @@ import { getAllPosts } from "@/lib/api";
 export default function Home() {
    const posts = getAllPosts();
    return (
-      <>
+      <main>
          <Hero />
          <Benefits />
          <ScrollText />
          <About />
          <Posts posts={posts} />
-      </>
+      </main>
    );
 }

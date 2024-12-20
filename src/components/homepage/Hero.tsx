@@ -3,6 +3,8 @@ import { Spotlight } from "../ui/Spotlight";
 import { GradualSpacing } from "../ui/GradualSpacing";
 import Button from "../Button";
 import DotPattern from "../ui/DotPattern";
+import { Transition } from "../ui/Transition";
+import { once } from "events";
 
 export default function Hero() {
    return (
@@ -37,13 +39,19 @@ export default function Hero() {
                   className="text-center text-4xl font-bold -tracking-widest  text-white md:text-7xl mt-2 md:mt-8"
                   text="Community"
                />
-               <p className="font-normal md:text-lg text-neutral-300 max-w-2xl text-center mx-auto mb-14 mt-10">
-                  Selamat datang di komunitas Night Coder ID! Temukan inspirasi,
-                  belajarlah dari para ahli, dan menjadi bagian dari revolusi
-                  teknologi yang terus berkembang.
-               </p>
+               <Transition viewport={{ once: true }}>
+                  <p className="font-normal md:text-lg text-neutral-300 max-w-2xl text-center mx-auto mb-14 mt-10">
+                     Selamat datang di komunitas Night Coder ID! Temukan
+                     inspirasi, belajarlah dari para ahli, dan menjadi bagian
+                     dari revolusi teknologi yang terus berkembang.
+                  </p>
+               </Transition>
 
-               <Button href="#" label="Join Groub" />
+               <Button
+                  href="https://chat.whatsapp.com/KEmpAUrSqR3DFOhODjiNb8"
+                  label="Join Groub"
+                  target="_blank"
+               />
             </div>
          </div>
          {/* END:Content */}

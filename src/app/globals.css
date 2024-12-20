@@ -21,14 +21,14 @@ body {
    .blob {
       background: conic-gradient(
          from 2.35rad,
-         rgba(150, 19, 196, 0.5),
-         rgba(7, 29, 228, 0.5)
+         rgba(49, 123, 249, 0.5),
+         rgba(224, 24, 228, 0.5)
       );
    }
 }
 @layer utilities {
    .desc {
-      @apply text-base md:text-lg tracking-wide leading-relaxed text-white/40;
+      @apply text-base md:text-lg tracking-wide leading-relaxed text-white/50;
    }
    .border-left {
       @apply bg-white/20 w-[1px] h-full absolute top-0 lg:left-8 xl:left-10 hidden md:block;
