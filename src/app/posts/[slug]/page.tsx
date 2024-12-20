@@ -6,6 +6,30 @@ import markdownToHtml from "@/lib/markdownToHtml";
 import PostHeader from "@/components/postpage/PostHeader";
 import { PostBody } from "@/components/postpage/PostBody";
 
+type Params = {
+   params: Promise<{
+      slug: string;
+   }>;
+};
+
+export async function generateMetadata(props: Params): Promise<Metadata> {
+   const params = await props.params;
+   const post = getPostBySlug(params.slug);
+
+   if (!post) {
+      return notFound();
+   }
+
+   const title = `${post.title} | Next.js Blog Example with ${CMS_NAME}`;
+
+   return {
+      title,
+      openGraph: {
+         title,
+         images: [post.ogImage.url],
+      },
+   };
+}
 export default async function Post(props: Params) {
    const params = await props.params;
    const post = getPostBySlug(params.slug);
@@ -35,46 +59,8 @@ export default async function Post(props: Params) {
             <div className="border-right"></div>
             <div className="border-top"></div>
          </div>
-
-         {/* <Container>
-            <Header />
-            <article className="mb-32">
-               <PostHeader
-                  title={post.title}
-                  coverImage={post.coverImage}
-                  date={post.date}
-                  author={post.author}
-               />
-               <PostBody content={content} />
-            </article>
-         </Container> */}
       </main>
    );
-}
-
-type Params = {
-   params: Promise<{
-      slug: string;
-   }>;
-};
-
-export async function generateMetadata(props: Params): Promise<Metadata> {
-   const params = await props.params;
-   const post = getPostBySlug(params.slug);
-
-   if (!post) {
-      return notFound();
-   }
-
-   const title = `${post.title} | Next.js Blog Example with ${CMS_NAME}`;
-
-   return {
-      title,
-      openGraph: {
-         title,
-         images: [post.ogImage.url],
-      },
-   };
 }
 
 export async function generateStaticParams() {
@@ -85,7 +71,7 @@ export async function generateStaticParams() {
    }));
 }
 
-export const Icon = ({ className }: { className: string }) => {
+const Icon = ({ className }: { className: string }) => {
    return (
       <svg
          xmlns="http://www.w3.org/2000/svg"

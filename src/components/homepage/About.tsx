@@ -16,7 +16,7 @@ export default function About() {
             </SectionHeading>
             {/* End: Section Title */}
 
-            <Transition>
+            <Transition viewport={{ once: true }}>
                <p className=" text-base md:text-xl font-medium text-white/40 leading-relaxed tracking-wide">
                   NightCoderID dibuat pada 21 September 2022 oleh Imam Wahyudi.
                </p>
@@ -38,14 +38,14 @@ export default function About() {
             </Transition>
 
             <div className="grid lg:grid-cols-2 gap-10 mt-20 items-center">
-               <Transition>
+               <Transition viewport={{ once: true }}>
                   <img
                      className="rounded-2xl"
                      src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                      alt="NightCoder Community"
                   />
                </Transition>
-               <Transition>
+               <Transition viewport={{ once: true }}>
                   <SectionHeading className="text-start">
                      <SlideIn className="text-white/40">
                         Ayo gabung bersama

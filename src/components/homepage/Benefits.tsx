@@ -18,7 +18,7 @@ export default function Benefits() {
                <SlideIn>!NightCoder</SlideIn>
             </SectionHeading>
             {/* End: Section Title */}
-            <Transition>
+            <Transition viewport={{ once: true }}>
                <div className="grid grid-cols-1 md:grid-cols-3  gap-6 ">
                   {BENEFITS.map((item) => (
                      <MagicCard key={item.title} className="px-6 py-8">
