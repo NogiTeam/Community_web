@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+
 import { MagicCard } from "../ui/MagicCard";
 import { Monitor } from "iconsax-react";
 import { SectionHeading } from "../ui/Typography";
@@ -19,7 +19,7 @@ export default function Posts({ posts }: { posts: Post[] }) {
                <SlideIn>dan lainnya</SlideIn>
             </SectionHeading>
             {/* End: Section Title */}
-            <Transition>
+            <Transition viewport={{ once: true }}>
                <div className="grid grid-cols-1 md:grid-cols-3  gap-6">
                   {posts.map((post: Post) => (
                      <CardPost

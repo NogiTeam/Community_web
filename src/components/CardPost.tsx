@@ -1,9 +1,8 @@
-import React from "react";
 import { MagicCard } from "./ui/MagicCard";
 import Link from "next/link";
 import { Author } from "@/interfaces/author";
-import DateFormatter from "@/app/_components/date-formatter";
 import { ArrowRight2 } from "iconsax-react";
+import DateFormatter from "./ui/DateFormatter";
 
 interface Post {
    slug: string;
