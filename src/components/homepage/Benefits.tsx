@@ -15,7 +15,7 @@ export default function Benefits() {
             <SectionHeading>
                <SlideIn className="text-white/40">Manfaat gabung</SlideIn>
                <br />
-               <SlideIn>!NightCoder</SlideIn>
+               <SlideIn>Forex Currency</SlideIn>
             </SectionHeading>
             {/* End: Section Title */}
             <Transition viewport={{ once: true }}>
