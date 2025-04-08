@@ -31,7 +31,7 @@ export default function Hero() {
             <div className="p-4 container flex items-center justify-center flex-col relative z-10  w-full pt-20 md:pt-0 text-center">
                <GradualSpacing
                   className="text-center text-4xl font-bold -tracking-widest  text-white md:text-7xl "
-                  text="NightCoderID "
+                  text="Forex Currency "
                />
                <GradualSpacing
                   duration={1}
@@ -40,9 +40,9 @@ export default function Hero() {
                />
                <Transition viewport={{ once: true }}>
                   <p className="font-normal md:text-lg text-neutral-300 max-w-2xl text-center mx-auto mb-14 mt-10">
-                     Selamat datang di komunitas Night Coder ID! Temukan
+                     Selamat datang di komunitas Forex Currency Temukan
                      inspirasi, belajarlah dari para ahli, dan menjadi bagian
-                     dari revolusi teknologi yang terus berkembang.
+                     dari revolusi Trading yang terus berkembang.
                   </p>
                </Transition>
 
