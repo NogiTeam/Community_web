@@ -47,7 +47,7 @@ export default function Hero() {
                </Transition>
 
                <Button
-                  href="https://chat.whatsapp.com/KEmpAUrSqR3DFOhODjiNb8"
+                  href="https://linktr.ee/sobatforex"
                   label="Join Groub"
                   target="_blank"
                />
