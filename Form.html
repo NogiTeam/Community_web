@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form WA Emtrade</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+    .container h2 {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      font-weight: 500;
+      margin-bottom: 6px;
+      display: block;
+    }
+    input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      font-size: 14px;
+    }
+    .wa-prefix {
+      display: flex;
+    }
+    .wa-prefix span {
+      background: #eee;
+      padding: 10px 14px;
+      border: 1px solid #ccc;
+      border-right: none;
+      border-radius: 12px 0 0 12px;
+    }
+    .wa-prefix input {
+      border-radius: 0 12px 12px 0;
+      border-left: none;
+      flex: 1;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #007bff;
+      color: white;
+      font-size: 15px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>WELCOME TO FOREX CURRENCY</h2>
+    <h2>SYARAT JOIN GRUP VIP</h2>
+    <br>1. Daftar melalui link dibawah</br>
+    <p><a href="https://one.exnesstrack.org/a/anffrzggm5">Daftar</a></p>
+    <p>2. Masukan kode mitra "anffrzggm5"(WAJIB)</p>
+    <p>3. Setelah melakukan pendaftaran dengan link diatas, silahkan lakukan deposit minimal 11$ atau Rp 179.000</p>
+    <p>4. Jika sudah melakukan pendaftaran dan deposit, konfirmasi ke admin dengan menyertakan id dan screenshoot</p>
+    
+    <div class="form-group">
+      <label>Nama Lengkap *</label>
+      <input type="text" id="nama" placeholder="Masukkan nama disini" required>
+    </div>
+
+    <div class="form-group">
+      <label>Email *</label>
+      <input type="email" id="email" placeholder="Masukkan email disini" required>
+    </div>
+
+    <div class="form-group">
+      <label>Nomor WhatsApp *</label>
+      <div class="wa-prefix">
+        <span>+62</span>
+        <input type="tel" id="nomor" placeholder="81234567890" required>
+      </div>
+    </div>
+    
+ <div class="form-group">
+      <label>Nomer Id</label>
+      <input type="text" id="kode" placeholder="Masukkan nomer id disini">
+    </div>
+
+<div class="container">
+    <h2>Mohon isi data Anda di bawah ini untuk terhubung ke WhatsApp kami:</h2>
+    </div>
+
+    <button onclick="kirimWA()">Chat Admin Forex Currency</button>
+  </div>
+
+  <script>
+    function kirimWA() {
+      const nama = document.getElementById("nama").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const nomor = document.getElementById("nomor").value.trim();
+      const kode = document.getElementById("kode").value.trim();
+      const tujuan = "6281234567890"; // Ganti dengan nomor admin WA
+
+      if (!nama || !email || !nomor) {
+        alert("Mohon lengkapi semua data wajib.");
+        return;
+      }
+
+      const pesan = `Halo, saya ingin terhubung dengan Emtrade/Emvest.%0A%0ANama: ${nama}%0AEmail: ${email}%0ANomor WA: ${nomor}%0ANomer Id: ${kode}`;
+      const url = `https://wa.me/${tujuan}?text=${pesan}`;
+      window.open(url, '_blank');
+    }
+  </script>
+
+</body>
+</html>
