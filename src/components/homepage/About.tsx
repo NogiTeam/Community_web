@@ -11,28 +11,23 @@ export default function About() {
             <SectionHeading>
                <SlideIn className="text-white/40">Apa itu</SlideIn>
                <br />
-               <SlideIn>!NightCoder ?</SlideIn>
+               <SlideIn>Forex Currency ?</SlideIn>
             </SectionHeading>
             {/* End: Section Title */}
 
             <Transition viewport={{ once: true }}>
                <p className=" text-base md:text-xl font-medium text-white/40 leading-relaxed tracking-wide">
-                  NightCoderID dibuat pada 21 September 2022 oleh Imam Wahyudi.
+                  Forex Currency dibuat pada 10 April 2025 oleh Aep.
                </p>
                <p className=" text-base md:text-xl font-medium text-white/40 leading-relaxed tracking-wide mt-6">
-                  Night CoderID didirikan dengan tujuan untuk menciptakan ruang
-                  interaktif bagi para coder di semua tingkatan pengalaman, di
-                  mana mereka dapat bertemu, berbagi, dan belajar bersama-sama.
-                  Kami menyambut semua orang dari berbagai latar belakang, baik
-                  pemula yang ingin memulai perjalanan coding mereka maupun
-                  profesional yang ingin terus meningkatkan skillnya.
+                  Forex Currency Komunitas adalah kelompok orang yang berbagi minat dan pengetahuan dalam berdagang di pasar finansial, seperti saham, forex, atau kripto. Mereka saling berbagi informasi, strategi, dan pengalaman untuk saling mendukung dalam mencapai kesuksesan trading.
                </p>
                <p className=" text-base md:text-xl font-medium text-white/40 leading-relaxed tracking-wide mt-6">
                   Melalui acara webinar atau workshop secara online, kami
                   menyediakan platform untuk berbagi pengetahuan, menginspirasi,
                   dan membangun jaringan di antara komunitas kami. Komitmen kami
                   adalah memberikan pengalaman yang menyenangkan, edukatif, dan
-                  saling mendukung di dunia coding.
+                  saling mendukung di dunia trading.
                </p>
             </Transition>
 
@@ -50,11 +45,11 @@ export default function About() {
                         Ayo gabung bersama
                      </SlideIn>
                      <br />
-                     <SlideIn>kami di !NightCoder ?</SlideIn>
+                     <SlideIn>kami di Forex Currency ?</SlideIn>
                   </SectionHeading>
                   <p className="desc mb-8">
-                     Rasakan pengalaman coding yang menyenangkan seru setiap
-                     hari dan menambah wawasan seputar dunia teknologi!
+                     Rasakan pengalaman trading yang menyenangkan seru setiap
+                     hari dan menambah wawasan seputar dunia trading!
                   </p>
                   <Button target="_blank" href="#" label="JOIN NOW" />
                </Transition>
