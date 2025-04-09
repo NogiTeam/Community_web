@@ -20,7 +20,7 @@ export default function About() {
                   Forex Currency dibuat pada 10 April 2025 oleh Aep.
                </p>
                <p className=" text-base md:text-xl font-medium text-white/40 leading-relaxed tracking-wide mt-6">
-                  Forex Currency Komunitas adalah kelompok orang yang berbagi minat dan pengetahuan dalam berdagang di pasar finansial, seperti saham, forex, atau kripto. Mereka saling berbagi informasi, strategi, dan pengalaman untuk saling mendukung dalam mencapai kesuksesan trading.
+                  Forex Currency Community adalah kelompok orang yang berbagi minat dan pengetahuan dalam berdagang di pasarforex. Mereka saling berbagi informasi, strategi, dan pengalaman untuk saling mendukung dalam mencapai kesuksesan trading.
                </p>
                <p className=" text-base md:text-xl font-medium text-white/40 leading-relaxed tracking-wide mt-6">
                   Melalui acara webinar atau workshop secara online, kami
