@@ -4,7 +4,7 @@ coverImage: "/assets/blog/preview/forex.jpg"
 date: "2020-03-16T05:35:07.322Z"
 author:
    name: Yudi
-   picture: "/assets/blog/authors/forex.jpeg"
+   picture: "/assets/blog/authors/jj.jpeg"
 ogImage:
    url: "/assets/blog/preview/forex.jpg"
 ---
