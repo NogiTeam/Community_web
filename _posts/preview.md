@@ -17,8 +17,6 @@ Pastikan kalian sudah ada akun di aplikasi Exness
 LANGKAH 2
 Masuk ke menu "Live Chat"
 Lalu di Live Chat kalian ketik "Change Mitra"
+<img src:"/assets/blog/preview/forex.jpg">
 NOTED: Jika tidak bisa, Coba login melalui website dan ikutin cara diatas
 
----
-coverImage: "/assets/blog/preview/forex1.jpg"
----
