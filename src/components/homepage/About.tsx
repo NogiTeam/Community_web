@@ -17,7 +17,7 @@ export default function About() {
 
             <Transition viewport={{ once: true }}>
                <p className=" text-base md:text-xl font-medium text-white/40 leading-relaxed tracking-wide">
-                  Forex Currency dibuat pada 10 April 2025 oleh Aep.
+                  Forex Currency dibuat pada 07 Februari 2025.
                </p>
                <p className=" text-base md:text-xl font-medium text-white/40 leading-relaxed tracking-wide mt-6">
                   Forex Currency Community adalah kelompok orang yang berbagi minat dan pengetahuan dalam berdagang di pasar Forex. Mereka saling berbagi informasi, strategi, dan pengalaman untuk saling mendukung dalam mencapai kesuksesan trading.
@@ -35,8 +35,8 @@ export default function About() {
                <Transition viewport={{ once: true }}>
                   <img
                      className="rounded-2xl"
-                     src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                     alt="NightCoder Community"
+                     src="https://files.catbox.moe/3yub0q.jpg"
+                     alt="Forex Currency Community"
                   />
                </Transition>
                <Transition viewport={{ once: true }}>
