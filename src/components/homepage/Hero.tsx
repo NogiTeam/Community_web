@@ -47,8 +47,8 @@ export default function Hero() {
                </Transition>
 
                <Button
-                  href="https://linktr.ee/sobatforex"
-                  label="Join Groub"
+                  href="https://linktr.ee/forexcurrency"
+                  label="Join Group"
                   target="_blank"
                />
             </div>
