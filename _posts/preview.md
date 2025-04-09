@@ -11,4 +11,14 @@ ogImage:
 
 Disini admin mau ngasih tau tutorial pindah mitra ke Forex Currency.
 
-<h2>Langkah 1</h2>
+LANGKAH 1
+Pastikan kalian sudah ada akun di aplikasi Exness
+
+LANGKAH 2
+Masuk ke menu "Live Chat"
+Lalu di Live Chat kalian ketik "Change Mitra"
+NOTED: Jika tidak bisa, Coba login melalui website dan ikutin cara diatas
+
+---
+coverImage: "/assets/blog/preview/forex1.jpg"
+---
