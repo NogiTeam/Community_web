@@ -35,7 +35,7 @@ export default function About() {
                <Transition viewport={{ once: true }}>
                   <img
                      className="rounded-2xl"
-                     src="https://files.catbox.moe/3yub0q.jpg"
+                     src="https://files.catbox.moe/tfza8g.jpg"
                      alt="Forex Currency Community"
                   />
                </Transition>
