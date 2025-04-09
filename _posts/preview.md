@@ -1,7 +1,7 @@
 ---
 title: "Tutorial pindah mitra"
 coverImage: "/assets/blog/preview/forex.jpg"
-date: "2020-03-16T05:35:07.322Z"
+date: "2025-04-09T05:35:07.322Z"
 author:
    name: Yudi
    picture: "/assets/blog/authors/jj.jpeg"
