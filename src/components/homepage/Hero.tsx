@@ -46,11 +46,7 @@ export default function Hero() {
                   </p>
                </Transition>
 
-               <Button
-                  href="https://linktr.ee/forexcurrency"
-                  label="Join Group"
-                  target="_blank"
-               />
+               
             </div>
          </div>
          {/* END:Content */}
