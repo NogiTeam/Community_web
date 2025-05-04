@@ -10,9 +10,9 @@ export default function Home() {
    return (
       <main>
          <Hero />
+         <About />
          <Benefits />
          <ScrollText />
-         <About />
          <Posts posts={posts} />
       </main>
    );
